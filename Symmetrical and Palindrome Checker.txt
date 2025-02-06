@@ -1,0 +1,20 @@
+def symmetrical(string):
+    string_len = len(string)
+    string_half_len = string_len // 2
+    
+    if string[:string_half_len] == string[string_half_len:]:
+        print('Symmetrical')
+    else:
+        print('Not Symmetrical')
+
+string = input('String: ')
+symmetrical(string)
+
+def palindrome(string):
+    if string[::-1] == string:
+        print('Palindrome')
+    else:
+        print('Not Palindrome')
+
+string = input('String: ')
+palindrome(string)
